@@ -9,29 +9,25 @@ import DynamicBottomSheet
 
 class AboutUsBottomSheet: DynamicBottomSheetViewController{
     
-    let logoLabel: UILabel = {
-        let lbl = UILabel()
-        lbl.text = "Device\nAssistant"
-        lbl.numberOfLines = 2
-        lbl.textAlignment = .center
-        lbl.font = UIFont.init(name: "ArialRoundedMTBold", size: 25)
-        lbl.layer.borderWidth = 8
-        lbl.layer.cornerRadius = 15
-        lbl.layer.borderColor = K.brandYellow.cgColor
-        Helper.setHeight(lbl, 150)
-        Helper.setWidth(lbl, 150)
-        
-        return lbl
-    }()
+
     
     let logoImageView: UIImageView = {
         let iv = UIImageView()
         iv.image = UIImage(named: "icon")
+        
         Helper.setWidth(iv, 150)
         Helper.setHeight(iv, 150)
         iv.layer.cornerRadius = 20
         iv.clipsToBounds = true
         return iv
+    }()
+    
+    let versionLabel: UILabel = {
+        let lbl = UILabel()
+        lbl.textColor = K.darkTab
+        lbl.font =  UIFont.init(name: "ArialRoundedMTBold", size: 19)
+        lbl.text = "Version 1.0.0"
+        return lbl
     }()
     
     override func configureView() {
@@ -48,6 +44,12 @@ class AboutUsBottomSheet: DynamicBottomSheetViewController{
         contentView.addSubview(logoImageView)
         logoImageView.snp.makeConstraints { make in
             make.center.equalTo(contentView)
+        }
+        
+        contentView.addSubview(versionLabel)
+        versionLabel.snp.makeConstraints { make in
+            make.centerX.equalTo(contentView)
+            make.top.equalTo(logoImageView.snp.bottomMargin).offset(14)
         }
     }
     

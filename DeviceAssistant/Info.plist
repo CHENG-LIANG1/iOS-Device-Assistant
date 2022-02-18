@@ -29,8 +29,9 @@
 	<string>Application requires user’s location for better user experience.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Application requires user’s location for better user experience.</string>
-    
-    <key>UIUserInterfaceStyle</key>
-    <string>Light</string>
+	<key>UIUserInterfaceStyle</key>
+	<string>Light</string>
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
 </dict>
 </plist>
