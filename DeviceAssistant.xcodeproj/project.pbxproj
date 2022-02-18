@@ -20,7 +20,6 @@
 		FC8473E827BA2C8000FB9B56 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8473E727BA2C8000FB9B56 /* Helper.swift */; };
 		FC8729FD27BCCEBD00FF2261 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC8729FC27BCCEBD00FF2261 /* SystemConfiguration.framework */; };
 		FC872A0127BCEDE100FF2261 /* HomeViewController+helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC872A0027BCEDE100FF2261 /* HomeViewController+helpers.swift */; };
-		FC872A0327BE3AFC00FF2261 /* ProfileCell.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC872A0227BE3AFC00FF2261 /* ProfileCell.swift.swift */; };
 		FC872A0527BE488300FF2261 /* updateUserNameBottomSheet.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC872A0427BE488300FF2261 /* updateUserNameBottomSheet.swift.swift */; };
 		FC872A0927BF42D400FF2261 /* AboutUsBottomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC872A0827BF42D400FF2261 /* AboutUsBottomSheet.swift */; };
 		FCD465BC27BB6E120014DEAE /* DiskStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD465BB27BB6E120014DEAE /* DiskStatus.swift */; };
@@ -65,7 +64,6 @@
 		FC8729FE27BCD28400FF2261 /* DeviceAssistant.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DeviceAssistant.entitlements; sourceTree = "<group>"; };
 		FC8729FF27BCD4AF00FF2261 /* DeviceAssistantRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DeviceAssistantRelease.entitlements; sourceTree = "<group>"; };
 		FC872A0027BCEDE100FF2261 /* HomeViewController+helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+helpers.swift"; sourceTree = "<group>"; };
-		FC872A0227BE3AFC00FF2261 /* ProfileCell.swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift.swift; sourceTree = "<group>"; };
 		FC872A0427BE488300FF2261 /* updateUserNameBottomSheet.swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = updateUserNameBottomSheet.swift.swift; sourceTree = "<group>"; };
 		FC872A0827BF42D400FF2261 /* AboutUsBottomSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsBottomSheet.swift; sourceTree = "<group>"; };
 		FCD465B827BB4EC80014DEAE /* DeviceAssistant-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DeviceAssistant-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -156,7 +154,6 @@
 				FCD465B827BB4EC80014DEAE /* DeviceAssistant-Bridging-Header.h */,
 				FCD465BB27BB6E120014DEAE /* DiskStatus.swift */,
 				FC872A0027BCEDE100FF2261 /* HomeViewController+helpers.swift */,
-				FC872A0227BE3AFC00FF2261 /* ProfileCell.swift.swift */,
 				FC872A0427BE488300FF2261 /* updateUserNameBottomSheet.swift.swift */,
 				FC872A0827BF42D400FF2261 /* AboutUsBottomSheet.swift */,
 			);
@@ -346,7 +343,6 @@
 				FCD465BC27BB6E120014DEAE /* DiskStatus.swift in Sources */,
 				FC8473AF27BA099700FB9B56 /* AppDelegate.swift in Sources */,
 				FC8473B927BA099700FB9B56 /* DeviceAssistant.xcdatamodeld in Sources */,
-				FC872A0327BE3AFC00FF2261 /* ProfileCell.swift.swift in Sources */,
 				FC8473B127BA099700FB9B56 /* SceneDelegate.swift in Sources */,
 				FC8473E427BA1CB400FB9B56 /* HomeViewController.swift in Sources */,
 				FC8473E827BA2C8000FB9B56 /* Helper.swift in Sources */,
@@ -528,6 +524,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -557,6 +554,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
