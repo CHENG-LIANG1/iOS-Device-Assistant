@@ -76,6 +76,7 @@ extension changeUserNameBottomSheet : UITextFieldDelegate {
             textField.resignFirstResponder()
             UserDefaults.standard.set(textField.text!, forKey: "username")
             Helper.Viberation.heavy.viberate()
+            
             self.dismiss(animated: true, completion: nil)
             
         }else {

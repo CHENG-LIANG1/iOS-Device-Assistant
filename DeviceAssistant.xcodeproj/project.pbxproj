@@ -14,9 +14,6 @@
 		FC8473B927BA099700FB9B56 /* DeviceAssistant.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FC8473B727BA099700FB9B56 /* DeviceAssistant.xcdatamodeld */; };
 		FC8473BB27BA099900FB9B56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC8473BA27BA099900FB9B56 /* Assets.xcassets */; };
 		FC8473BE27BA099900FB9B56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC8473BC27BA099900FB9B56 /* LaunchScreen.storyboard */; };
-		FC8473C927BA099900FB9B56 /* DeviceAssistantTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8473C827BA099900FB9B56 /* DeviceAssistantTests.swift */; };
-		FC8473D327BA099900FB9B56 /* DeviceAssistantUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8473D227BA099900FB9B56 /* DeviceAssistantUITests.swift */; };
-		FC8473D527BA099900FB9B56 /* DeviceAssistantUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8473D427BA099900FB9B56 /* DeviceAssistantUITestsLaunchTests.swift */; };
 		FC8473E227BA1C2D00FB9B56 /* K.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8473E127BA1C2D00FB9B56 /* K.swift */; };
 		FC8473E427BA1CB400FB9B56 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8473E327BA1CB400FB9B56 /* HomeViewController.swift */; };
 		FC8473E627BA1CFC00FB9B56 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8473E527BA1CFC00FB9B56 /* SettingsViewController.swift */; };
@@ -25,7 +22,6 @@
 		FC872A0127BCEDE100FF2261 /* HomeViewController+helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC872A0027BCEDE100FF2261 /* HomeViewController+helpers.swift */; };
 		FC872A0327BE3AFC00FF2261 /* ProfileCell.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC872A0227BE3AFC00FF2261 /* ProfileCell.swift.swift */; };
 		FC872A0527BE488300FF2261 /* updateUserNameBottomSheet.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC872A0427BE488300FF2261 /* updateUserNameBottomSheet.swift.swift */; };
-		FC872A0727BE557900FF2261 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC872A0627BE557900FF2261 /* ImagePicker.swift */; };
 		FC872A0927BF42D400FF2261 /* AboutUsBottomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC872A0827BF42D400FF2261 /* AboutUsBottomSheet.swift */; };
 		FCD465BC27BB6E120014DEAE /* DiskStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD465BB27BB6E120014DEAE /* DiskStatus.swift */; };
 /* End PBXBuildFile section */
@@ -60,10 +56,7 @@
 		FC8473BD27BA099900FB9B56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC8473BF27BA099900FB9B56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC8473C427BA099900FB9B56 /* DeviceAssistantTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeviceAssistantTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FC8473C827BA099900FB9B56 /* DeviceAssistantTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceAssistantTests.swift; sourceTree = "<group>"; };
 		FC8473CE27BA099900FB9B56 /* DeviceAssistantUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeviceAssistantUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FC8473D227BA099900FB9B56 /* DeviceAssistantUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceAssistantUITests.swift; sourceTree = "<group>"; };
-		FC8473D427BA099900FB9B56 /* DeviceAssistantUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceAssistantUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		FC8473E127BA1C2D00FB9B56 /* K.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = K.swift; sourceTree = "<group>"; };
 		FC8473E327BA1CB400FB9B56 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		FC8473E527BA1CFC00FB9B56 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
@@ -74,7 +67,6 @@
 		FC872A0027BCEDE100FF2261 /* HomeViewController+helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+helpers.swift"; sourceTree = "<group>"; };
 		FC872A0227BE3AFC00FF2261 /* ProfileCell.swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift.swift; sourceTree = "<group>"; };
 		FC872A0427BE488300FF2261 /* updateUserNameBottomSheet.swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = updateUserNameBottomSheet.swift.swift; sourceTree = "<group>"; };
-		FC872A0627BE557900FF2261 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		FC872A0827BF42D400FF2261 /* AboutUsBottomSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsBottomSheet.swift; sourceTree = "<group>"; };
 		FCD465B827BB4EC80014DEAE /* DeviceAssistant-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DeviceAssistant-Bridging-Header.h"; sourceTree = "<group>"; };
 		FCD465BB27BB6E120014DEAE /* DiskStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiskStatus.swift; sourceTree = "<group>"; };
@@ -129,8 +121,6 @@
 			isa = PBXGroup;
 			children = (
 				FC8473AD27BA099700FB9B56 /* DeviceAssistant */,
-				FC8473C727BA099900FB9B56 /* DeviceAssistantTests */,
-				FC8473D127BA099900FB9B56 /* DeviceAssistantUITests */,
 				FC8473AC27BA099700FB9B56 /* Products */,
 				C31F72F279EE8CB389FE684A /* Pods */,
 				914714AFC01E9A8F10B896F3 /* Frameworks */,
@@ -168,27 +158,9 @@
 				FC872A0027BCEDE100FF2261 /* HomeViewController+helpers.swift */,
 				FC872A0227BE3AFC00FF2261 /* ProfileCell.swift.swift */,
 				FC872A0427BE488300FF2261 /* updateUserNameBottomSheet.swift.swift */,
-				FC872A0627BE557900FF2261 /* ImagePicker.swift */,
 				FC872A0827BF42D400FF2261 /* AboutUsBottomSheet.swift */,
 			);
 			path = DeviceAssistant;
-			sourceTree = "<group>";
-		};
-		FC8473C727BA099900FB9B56 /* DeviceAssistantTests */ = {
-			isa = PBXGroup;
-			children = (
-				FC8473C827BA099900FB9B56 /* DeviceAssistantTests.swift */,
-			);
-			path = DeviceAssistantTests;
-			sourceTree = "<group>";
-		};
-		FC8473D127BA099900FB9B56 /* DeviceAssistantUITests */ = {
-			isa = PBXGroup;
-			children = (
-				FC8473D227BA099900FB9B56 /* DeviceAssistantUITests.swift */,
-				FC8473D427BA099900FB9B56 /* DeviceAssistantUITestsLaunchTests.swift */,
-			);
-			path = DeviceAssistantUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -365,7 +337,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC872A0727BE557900FF2261 /* ImagePicker.swift in Sources */,
 				FC872A0527BE488300FF2261 /* updateUserNameBottomSheet.swift.swift in Sources */,
 				FC872A0127BCEDE100FF2261 /* HomeViewController+helpers.swift in Sources */,
 				FC8473B327BA099700FB9B56 /* ViewController.swift in Sources */,
@@ -386,7 +357,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC8473C927BA099900FB9B56 /* DeviceAssistantTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,8 +364,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC8473D327BA099900FB9B56 /* DeviceAssistantUITests.swift in Sources */,
-				FC8473D527BA099900FB9B56 /* DeviceAssistantUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

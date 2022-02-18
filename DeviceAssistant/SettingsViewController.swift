@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SettingsViewController: UIViewController, ImagePickerDelegate{
+class SettingsViewController: UIViewController, UIImagePickerControllerDelegate & UINavigationControllerDelegate{
     func createCardView(width: Int, height: Int) -> UIView {
         let v = UIView()
         v.layer.cornerRadius = 15
@@ -34,6 +34,7 @@ class SettingsViewController: UIViewController, ImagePickerDelegate{
         Helper.setHeight(iv, 100)
         iv.clipsToBounds = true
         iv.backgroundColor = .white
+        iv.contentMode = .scaleAspectFill
         iv.image = UIImage(named: "cool")?.withTintColor(K.emojiYellow)
         return iv
     }()
@@ -64,7 +65,6 @@ class SettingsViewController: UIViewController, ImagePickerDelegate{
          let decoded = try! PropertyListDecoder().decode(Data.self, from: data)
          let image = UIImage(data: decoded)
         
-        
         return image!
     }
     
@@ -75,15 +75,9 @@ class SettingsViewController: UIViewController, ImagePickerDelegate{
         if let name = UserDefaults.standard.string(forKey: "username"){
             username = name
             userNameLabel.text = username
-            
         }
-        
-        profileImageView.image = loadImage()
-
     }
-    
-    var imagePicker: ImagePicker?
-    
+  
     let infoLabel: UILabel = {
         let lbl = UILabel()
         lbl.text = "Info"
@@ -130,10 +124,27 @@ class SettingsViewController: UIViewController, ImagePickerDelegate{
         return sv
     }()
     
+    
+
+    let imgPicker = UIImagePickerController()
+
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+           profileImageView.image = image
+           saveImage(image: image)
+        }
+        picker.dismiss(animated: true, completion: nil)
+    }
+    
 
     
     @objc func updateProfilePictureAction(sender: UIButton){
-        imagePicker?.present(from: sender)
+        if UIImagePickerController.isSourceTypeAvailable(UIImagePickerController.SourceType.photoLibrary) {
+            imgPicker.delegate = self
+            imgPicker.sourceType = UIImagePickerController.SourceType.photoLibrary;
+            imgPicker.allowsEditing = true
+        self.present(imgPicker, animated: true, completion: nil)
+       }
         Helper.Viberation.heavy.viberate()
     }
     
@@ -168,11 +179,10 @@ class SettingsViewController: UIViewController, ImagePickerDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.imagePicker = ImagePicker(presentationController: self, delegate: self)
-        
         getUserInfo()
         userNameLabel.text = username
         
+        profileImageView.image = loadImage()
         
         let timer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true, block: { _ in
             self.getUserInfo()
