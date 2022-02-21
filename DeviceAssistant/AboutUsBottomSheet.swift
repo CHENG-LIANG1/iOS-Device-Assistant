@@ -40,7 +40,7 @@ class AboutUsBottomSheet: DynamicBottomSheetViewController{
             make.centerX.equalTo(contentView)
         }
         
-        Helper.setHeight(contentView, 300)
+        Helper.setHeight(contentView, Float(K.screenHeight) / 2 + 50)
         contentView.addSubview(logoImageView)
         logoImageView.snp.makeConstraints { make in
             make.center.equalTo(contentView)

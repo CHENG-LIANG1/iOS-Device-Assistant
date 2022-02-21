@@ -165,7 +165,7 @@ class HomeViewController: UIViewController {
         deviceCardView.addSubview(deviceNameLabel)
         deviceNameLabel.snp.makeConstraints { make in
             make.top.equalTo(deviceCardView).offset(20)
-            make.left.equalTo(scrollView).offset(35)
+            make.left.equalTo(deviceCardView).offset(35)
         }
         
 

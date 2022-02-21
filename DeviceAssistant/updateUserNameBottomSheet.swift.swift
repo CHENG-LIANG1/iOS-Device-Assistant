@@ -40,7 +40,7 @@ class changeUserNameBottomSheet: DynamicBottomSheetViewController{
         KRProgressHUD.set(style: .black)
         
         
-        Helper.setHeight(contentView, 600)
+        Helper.setHeight(contentView, Float(K.screenHeight) / 2)
         nameTextField.delegate = self
         
         let tap = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard))
