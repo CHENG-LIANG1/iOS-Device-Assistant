@@ -12,6 +12,11 @@ import BIASystemKit
 import SystemConfiguration.CaptiveNetwork
 
 class HomeViewController: UIViewController {
+    
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask{
+        return .portrait
+    }
+    
     let scrollView: UIScrollView = {
         let sv = UIScrollView()
         sv.contentSize = CGSize(width: K.screenWidth, height: 1000)
